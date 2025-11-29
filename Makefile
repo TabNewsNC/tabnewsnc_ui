@@ -1,8 +1,4 @@
-.PHONY: runner upgrade
-
-runner:
-	@echo "Running build-runner..."
-	@fvm dart run build_runner build -d
+.PHONY: upgrade
 
 upgrade:
 	@echo "Upgrading project..."
