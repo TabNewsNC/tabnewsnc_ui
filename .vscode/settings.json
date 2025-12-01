@@ -1,8 +1,10 @@
 {
   "cSpell.words": [
+    "ionicons",
     "pubspec",
     "softyes",
     "tabnewsnc"
   ],
-  "dart.flutterSdkPath": ".fvm/versions/3.38.3"
+  "dart.flutterSdkPath": ".fvm/versions/3.38.3",
+  "makefile.configureOnOpen": false
 }
