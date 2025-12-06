@@ -8,8 +8,8 @@ repository: https://github.com/TabNewsNC/tabnewsnc_ui
 version: 0.1.0
 
 environment:
-  sdk: ^3.10.1
-  flutter: ^3.38.3
+  sdk: ^3.10.3
+  flutter: ^3.38.4
 
 dependencies:
   flutter:
@@ -17,6 +17,7 @@ dependencies:
 
   ionicons: ^0.2.2
   google_fonts: ^6.3.2
+  lottie: ^3.3.2
 
 dev_dependencies:
   flutter_test:
@@ -28,3 +29,4 @@ dev_dependencies:
 flutter:
   assets:
     - assets/fonts/
+    - assets/animations/
