@@ -1,5 +1,5 @@
 mixin DateTimeMixin {
-  String getRelativeTime(DateTime dateTime) {
+  String toRelativeTime(DateTime dateTime) {
     final now = DateTime.now();
     final difference = now.difference(dateTime);
 

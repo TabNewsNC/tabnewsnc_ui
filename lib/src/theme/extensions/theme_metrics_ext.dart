@@ -5,10 +5,11 @@ import 'package:flutter/material.dart';
 
 class ThemeMetrics extends ThemeExtension<ThemeMetrics> {
   const ThemeMetrics({
-    required this.smaller,
+    required this.xSmall,
     required this.small,
     required this.medium,
     required this.large,
+    required this.xLarge,
     required this.icon,
     required this.blur,
     required this.radius,
@@ -19,10 +20,11 @@ class ThemeMetrics extends ThemeExtension<ThemeMetrics> {
     required this.duration,
   });
 
-  final double smaller;
+  final double xSmall;
   final double small;
   final double medium;
   final double large;
+  final double xLarge;
   final double icon;
   final double blur;
   final double radius;
@@ -34,10 +36,11 @@ class ThemeMetrics extends ThemeExtension<ThemeMetrics> {
 
   @override
   ThemeExtension<ThemeMetrics> copyWith({
-    double? smaller,
+    double? xSmall,
     double? small,
     double? medium,
     double? large,
+    double? xLarge,
     double? icon,
     double? blur,
     double? radius,
@@ -48,10 +51,11 @@ class ThemeMetrics extends ThemeExtension<ThemeMetrics> {
     Duration? duration,
   }) {
     return ThemeMetrics(
-      smaller: smaller ?? this.smaller,
+      xSmall: xSmall ?? this.xSmall,
       small: small ?? this.small,
       medium: medium ?? this.medium,
       large: large ?? this.large,
+      xLarge: xLarge ?? this.xLarge,
       icon: icon ?? this.icon,
       blur: blur ?? this.blur,
       radius: radius ?? this.radius,
@@ -71,10 +75,11 @@ class ThemeMetrics extends ThemeExtension<ThemeMetrics> {
     if (other is! ThemeMetrics) return this;
 
     return ThemeMetrics(
-      smaller: lerpDouble(smaller, other.smaller, t)!,
+      xSmall: lerpDouble(xSmall, other.xSmall, t)!,
       small: lerpDouble(small, other.small, t)!,
       medium: lerpDouble(medium, other.medium, t)!,
       large: lerpDouble(large, other.large, t)!,
+      xLarge: lerpDouble(xLarge, other.xLarge, t)!,
       icon: lerpDouble(icon, other.icon, t)!,
       blur: lerpDouble(blur, other.blur, t)!,
       radius: lerpDouble(radius, other.radius, t)!,

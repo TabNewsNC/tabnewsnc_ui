@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tabnewsnc_ui/src/theme/default_theme_colors.dart';
+import 'package:tabnewsnc_ui/src/theme/default_theme_metrics.dart';
+import 'package:tabnewsnc_ui/src/theme/default_theme_text.dart';
 import 'package:tabnewsnc_ui/src/theme/extensions/theme_colors_ext.dart';
 import 'package:tabnewsnc_ui/src/theme/extensions/theme_metrics_ext.dart';
 import 'package:tabnewsnc_ui/src/theme/extensions/theme_text_ext.dart';
-import 'package:tabnewsnc_ui/src/theme/theme_colors.dart';
 
-final class AppThemeData {
-  const AppThemeData({
-    required this.text,
-    required this.metrics,
+final class DefaultAppTheme {
+  const DefaultAppTheme({
+    this.text = const DefaultThemeText(),
+    this.metrics = const DefaultThemeMetrics(),
+    this.darkColors = const DefaultThemeDarkColors(),
+    this.lightColors = const DefaultThemeLightColors(),
   });
 
   final ThemeText text;
   final ThemeMetrics metrics;
+  final ThemeColors darkColors;
+  final ThemeColors lightColors;
 
   ThemeData get dark => _genTheme(isDark: true);
   ThemeData get light => _genTheme(isDark: false);
@@ -23,12 +29,12 @@ final class AppThemeData {
     final Brightness brightness;
 
     if (isDark) {
+      colors = darkColors;
       brightness = Brightness.dark;
-      colors = const ThemeDarkColors();
       theme = .dark(useMaterial3: true);
     } else {
+      colors = lightColors;
       brightness = Brightness.light;
-      colors = const ThemeLightColors();
       theme = .light(useMaterial3: true);
     }
 
