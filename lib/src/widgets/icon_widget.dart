@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tabnewsnc_ui/src/mixins/theme_mixin.dart';
 import 'package:tabnewsnc_ui/src/widgets/text_widget.dart';
-import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 class IconWidget extends StatelessWidget with ThemeMixin {
   const IconWidget(

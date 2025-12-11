@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
+import 'package:tabnewsnc_ui/src/mixins/theme_mixin.dart';
 
 enum TextWidgetSize {
   bodySmall,
