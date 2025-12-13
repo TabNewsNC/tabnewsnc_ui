@@ -2,9 +2,9 @@
 
 # TabNews | UI Package
 
-Pacote com os componentes de UI para o cliente construído em Flutter para
-visualizar e interagir com as notícias/artigos publicados no
-[TabNews](https://tabnews.com.br).
+Pacote com os componentes de UI para os clientes
+[TabNews](https://tabnews.com.br) construídos em Flutter para
+visualizar e interagir com as notícias e artigos publicados na plataforma.
 
 ## 🧑‍💻 Tecnologias
 
