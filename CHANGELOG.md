@@ -1,8 +1,12 @@
 # Changelog
 
-Pacote com os componentes de UI para os clientes
-[TabNews](https://tabnews.com.br) construídos em Flutter para
-visualizar e interagir com as notícias e artigos publicados na plataforma.
+Package with UI components for [TabNews](https://tabnews.com.br) clients built
+in [Flutter](https://flutter.dev) to view and interact with news and articles
+published on the platform.
+
+## 0.1.1
+
+* Fix dependence path: `tabnewsnc_engine`
 
 ## 0.1.0
 
